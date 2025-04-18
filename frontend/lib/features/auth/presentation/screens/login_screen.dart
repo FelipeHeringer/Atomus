@@ -48,21 +48,26 @@ class _LoginScreenState extends State<LoginScreen> {
             Text(
               "ATOMUS",
               style: GoogleFonts.montserrat(
-                color: Color(0xFF52A7CC),
-                fontSize: 32,
+                color: Color(0xFFFFFFFF),
+                fontSize: 40,
                 fontWeight: FontWeight.bold,
               ),
             ),
-            const SizedBox(height: 12),
-            const Icon(
-              Icons.all_inclusive_sharp,
-              color: Color(0xFF52A7CC),
-              size: 72,
+            const SizedBox(height: 16),
+            Image.asset('assets/atomus_logo.png', height: 159.08, width: 191),
+            const SizedBox(height: 21),
+            Text(
+              "Login",
+              style: GoogleFonts.montserrat(
+                color: Color(0xFFFFFFFF),
+                fontSize: 32,
+                fontWeight: FontWeight.w800,
+              ),
             ),
-            const SizedBox(height: 32),
+            const SizedBox(height: 16),
             _buildInputField(
               icon: Icons.account_circle_sharp,
-              hint: 'Username ou Email',
+              hint: 'Email',
               controller: _emailController,
               obscureText: false,
             ),
@@ -75,7 +80,7 @@ class _LoginScreenState extends State<LoginScreen> {
               suffix: IconButton(
                 icon: Icon(
                   obscurePassword ? Icons.visibility_off : Icons.visibility,
-                  color: Color(0xFF52A7CC),
+                  color: Theme.of(context).colorScheme.secondary,
                 ),
                 onPressed: () {
                   setState(() {
@@ -84,14 +89,15 @@ class _LoginScreenState extends State<LoginScreen> {
                 },
               ),
             ),
+            const SizedBox(height: 13),
             Align(
               alignment: Alignment.centerLeft,
               child: TextButton(
                 onPressed: () {},
-                child: const Text(
+                child: Text(
                   'Esqueci a senha',
                   style: TextStyle(
-                    color: Color(0xFF52A7CC),
+                    color: Theme.of(context).colorScheme.secondary,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -100,27 +106,31 @@ class _LoginScreenState extends State<LoginScreen> {
             const SizedBox(height: 8),
             BlocConsumer<AuthBloc, AuthState>(
               builder: (context, state) {
-                 if (state is AuthStateLoading) {
+                if (state is AuthStateLoading) {
                   return Center(child: CircularProgressIndicator());
                 }
                 return ElevatedButton(
                   onPressed: _onLogin,
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Color(0xFF52A7CC),
+                    backgroundColor: Theme.of(context).colorScheme.tertiary,
                     minimumSize: const Size.fromHeight(48),
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20),
+                      borderRadius: BorderRadius.circular(8),
                     ),
                   ),
-                  child: const Text(
+                  child: Text(
                     'Entrar',
-                    style: TextStyle(color: Colors.white, fontSize: 18),
+                    style: GoogleFonts.montserrat(
+                      color: Color(0xFFFFFFFF),
+                      fontSize: 25,
+                      fontWeight: FontWeight.w700,
+                    ),
                   ),
                 );
               },
               listener: (context, state) {
                 if (state is AuthStateSuccess) {
-                    ScaffoldMessenger.of(
+                  ScaffoldMessenger.of(
                     context,
                   ).showSnackBar(SnackBar(content: Text(state.message)));
                   Navigator.pushNamed(context, '/register');
@@ -133,15 +143,40 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
 
             const SizedBox(height: 16),
+            ElevatedButton.icon(
+              onPressed: () {},
+              icon: Image.asset('assets/google.png', height: 34, width: 34),
+              label: Text(
+                'Entrar com conta Google',
+                style: GoogleFonts.montserrat(
+                  color: Color(0xFF000000),
+                  fontSize: 16,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.white,
+                shadowColor: Colors.black26,
+                elevation: 4,
+                minimumSize: const Size.fromHeight(48),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8),
+                ),
+              ),
+            ),
+            const SizedBox(height: 16),
             RichText(
               text: TextSpan(
-                text: 'Não tem uma conta? ',
-                style: TextStyle(color: Color(0xFF52A7CC)),
+                text: 'Não tem uma conta ? ',
+                style: GoogleFonts.montserrat(
+                  color: Color(0xFFFFFFFF),
+                  fontSize: 18,
+                ),
                 children: [
                   TextSpan(
-                    text: 'Crie uma',
-                    style: TextStyle(
-                      color: Color(0xFF52A7CC),
+                    text: 'Cadastre-se',
+                    style: GoogleFonts.montserrat(
+                      color: Color(0xFF3FBFB2),
                       decoration: TextDecoration.underline,
                     ),
                     recognizer:
@@ -156,21 +191,6 @@ class _LoginScreenState extends State<LoginScreen> {
                           },
                   ),
                 ],
-              ),
-            ),
-            const SizedBox(height: 20),
-            ElevatedButton.icon(
-              onPressed: () {},
-              icon: Image.asset('assets/google.png', height: 24),
-              label: const Text(
-                'Entrar com conta Google',
-                style: TextStyle(color: Colors.black),
-              ),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.white,
-                shadowColor: Colors.black26,
-                elevation: 4,
-                minimumSize: const Size.fromHeight(48),
               ),
             ),
           ],
@@ -189,19 +209,27 @@ class _LoginScreenState extends State<LoginScreen> {
     return TextField(
       controller: controller,
       obscureText: obscureText,
-      style: const TextStyle(color: Colors.white),
+      style: GoogleFonts.montserrat(
+        color: Colors.white,
+        fontSize: 16,
+        fontWeight: FontWeight.w500,
+      ),
       decoration: InputDecoration(
-        prefixIcon: Icon(icon, color: Color(0xFF52A7CC)),
+        prefixIcon: Icon(
+          icon,
+          color: Theme.of(context).colorScheme.secondary,
+          size: 24,
+        ),
         suffixIcon: suffix,
         hintText: hint,
-        hintStyle: const TextStyle(color: Color(0xFF52A7CC)),
+        hintStyle: const TextStyle(color: Color(0xFFFFFFFF)),
         enabledBorder: OutlineInputBorder(
-          borderSide: const BorderSide(color: Color(0xFF52A7CC)),
-          borderRadius: BorderRadius.circular(20),
+          borderSide:  BorderSide(color: Theme.of(context).colorScheme.secondary),
+          borderRadius: BorderRadius.circular(8),
         ),
         focusedBorder: OutlineInputBorder(
-          borderSide: const BorderSide(color: Color(0xFF52A7CC)),
-          borderRadius: BorderRadius.circular(20),
+          borderSide: BorderSide(color: Theme.of(context).colorScheme.secondary),
+          borderRadius: BorderRadius.circular(8),
         ),
       ),
     );

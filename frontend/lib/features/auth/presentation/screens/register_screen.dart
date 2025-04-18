@@ -62,21 +62,26 @@ class _RegisterScreenState extends State<RegisterScreen> {
             Text(
               "ATOMUS",
               style: GoogleFonts.montserrat(
-                color: Color(0xFF52A7CC),
-                fontSize: 32,
-                fontWeight: FontWeight.bold,
+                color: Colors.white,
+                fontSize: 40,
+                fontWeight: FontWeight.w900,
               ),
             ),
             const SizedBox(height: 12),
-            const Icon(
-              Icons.all_inclusive_sharp,
-              color: Color(0xFF52A7CC),
-              size: 72,
+            Image.asset('assets/atomus_logo.png', width: 184, height: 184),
+            const SizedBox(height: 12),
+            Text(
+              "Cadastro",
+              style: GoogleFonts.montserrat(
+                color: Color(0xFFFFFFFF),
+                fontSize: 32,
+                fontWeight: FontWeight.w800,
+              ),
             ),
             const SizedBox(height: 32),
             _buildInputField(
               icon: Icons.account_circle_rounded,
-              hint: 'Username',
+              hint: 'Nome do Usuário',
               obscureText: false,
               controller: _usernameController,
             ),
@@ -96,7 +101,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
               suffix: IconButton(
                 icon: Icon(
                   obscurePassword ? Icons.visibility_off : Icons.visibility,
-                  color: Color(0xFF52A7CC),
+                  color: Theme.of(context).colorScheme.secondary,
                 ),
                 onPressed: () {
                   setState(() {
@@ -116,7 +121,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   obscureConfirmPassword
                       ? Icons.visibility_off
                       : Icons.visibility,
-                  color: Color(0xFF52A7CC),
+                  color: Theme.of(context).colorScheme.secondary,
                 ),
                 onPressed: () {
                   setState(() {
@@ -141,12 +146,12 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   RichText(
                     text: TextSpan(
                       text: 'Li e concordo com os ',
-                      style: TextStyle(color: Color(0xFF52A7CC)),
+                      style: TextStyle(color: Color(0xFFFFFFFF)),
                       children: [
                         TextSpan(
                           text: 'Termos e condições',
                           style: TextStyle(
-                            color: Color(0xFF52A7CC),
+                            color: Theme.of(context).colorScheme.secondary,
                             decoration: TextDecoration.underline,
                           ),
                           recognizer:
@@ -179,29 +184,33 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       _passwordController.text,
                       _confirmPasswordController.text,
                     )) {
-                        ScaffoldMessenger.of(
-                        context,
-                      ).showSnackBar(SnackBar(content: Text("As senhas não são as mesmas")));
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(content: Text("As senhas não são as mesmas")),
+                      );
                       return;
                     }
                     _onRegister();
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Color(0xFF52A7CC),
+                    backgroundColor: Theme.of(context).colorScheme.tertiary,
                     minimumSize: const Size.fromHeight(48),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20),
                     ),
                   ),
-                  child: const Text(
+                  child: Text(
                     'Cadastrar',
-                    style: TextStyle(color: Colors.white, fontSize: 18),
+                    style: GoogleFonts.montserrat(
+                      color: Colors.white,
+                      fontSize: 25,
+                      fontWeight: FontWeight.w700,
+                    ),
                   ),
                 );
               },
               listener: (context, state) {
                 if (state is AuthStateSuccess) {
-                  Navigator.pushNamed(context, '/skills');
+                  Navigator.pushNamed(context, '/welcome');
                 } else if (state is AuthStateFailure) {
                   ScaffoldMessenger.of(
                     context,
@@ -228,17 +237,21 @@ class _RegisterScreenState extends State<RegisterScreen> {
       obscureText: obscureText,
       style: TextStyle(color: Colors.white),
       decoration: InputDecoration(
-        prefixIcon: Icon(icon, color: Color(0xFF52A7CC)),
+        prefixIcon: Icon(icon, color: Theme.of(context).colorScheme.secondary),
         suffixIcon: suffix,
         hintText: hint,
-        hintStyle: const TextStyle(color: Color(0xFF52A7CC)),
+        hintStyle: TextStyle(color: Colors.white),
         enabledBorder: OutlineInputBorder(
-          borderSide: const BorderSide(color: Color(0xFF52A7CC)),
-          borderRadius: BorderRadius.circular(20),
+          borderSide: BorderSide(
+            color: Theme.of(context).colorScheme.secondary,
+          ),
+          borderRadius: BorderRadius.circular(8),
         ),
         focusedBorder: OutlineInputBorder(
-          borderSide: const BorderSide(color: Color(0xFF52A7CC)),
-          borderRadius: BorderRadius.circular(20),
+          borderSide: BorderSide(
+            color: Theme.of(context).colorScheme.secondary,
+          ),
+          borderRadius: BorderRadius.circular(8),
         ),
       ),
     );
