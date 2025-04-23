@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:frontend/features/skills/domain/entities/interest_option.dart';
+import 'package:frontend/features/skills/domain/entities/interests_option.dart';
 import 'package:frontend/features/skills/presentation/widget/_button.dart';
 import 'package:google_fonts/google_fonts.dart';
 
