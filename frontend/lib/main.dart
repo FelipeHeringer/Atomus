@@ -7,11 +7,15 @@ import 'package:frontend/features/auth/domain/use_cases/register_use_case.dart';
 import 'package:frontend/features/auth/presentation/bloc/auth_bloc.dart';
 import 'package:frontend/features/auth/presentation/screens/login_screen.dart';
 import 'package:frontend/features/auth/presentation/screens/register_screen.dart';
-import 'package:frontend/features/skills/presentation/screens/skills_profile_screen.dart';
+import 'package:frontend/features/skills/presentation/screens/interest_plan_screen.dart';
+import 'package:frontend/features/skills/presentation/screens/interest_profile_screen.dart';
+import 'package:frontend/welcome_screen.dart';
 
 void main() {
-  final authRepository = AuthRepositoryImpl(authRemoteDataSource: AuthRemoteDataSource());
-  runApp(MyApp(authRepository: authRepository,));
+  final authRepository = AuthRepositoryImpl(
+    authRemoteDataSource: AuthRemoteDataSource(),
+  );
+  runApp(MyApp(authRepository: authRepository));
 }
 
 class MyApp extends StatelessWidget {
@@ -21,27 +25,36 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
-     providers: [
-      BlocProvider(create: (_) => AuthBloc(registerUseCase: RegisterUseCase(authRepository: authRepository), loginUseCase: LoginUseCase(authRepository: authRepository)))
-     ],
-     child: MaterialApp(
-      debugShowCheckedModeBanner: false, 
-      title: "Atomus",
-      theme: ThemeData(
-        colorScheme: ColorScheme.light(
-          primary: Color(0xFF011F27),
-          secondary: Color(0xFF3FBFB2),
-          tertiary:Color(0xFFD94F04),
-        )
+      providers: [
+        BlocProvider(
+          create:
+              (_) => AuthBloc(
+                registerUseCase: RegisterUseCase(
+                  authRepository: authRepository,
+                ),
+                loginUseCase: LoginUseCase(authRepository: authRepository),
+              ),
+        ),
+      ],
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: "Atomus",
+        theme: ThemeData(
+          colorScheme: ColorScheme.light(
+            primary: Color(0xFF011F27),
+            secondary: Color(0xFF3FBFB2),
+            tertiary: Color(0xFFD94F04),
+          ),
+        ),
+        home: const LoginScreen(),
+        routes: {
+          '/login': (_) => LoginScreen(),
+          '/register': (_) => RegisterScreen(),
+          '/welcome': (_) => WelcomeScreen(),
+          '/skills': (_) => SkillsProfileScreen(),
+          '/interest_plan': (_) => InterestPlanScreen(),
+        },
       ),
-      home: const LoginScreen(),
-      routes: {
-        '/login': (_) => LoginScreen(),
-        '/register': (_) => RegisterScreen(),
-        '/skills': (_) => SkillsProfileScreen(),
-      },
-    )
-  );
-  } 
+    );
+  }
 }
-
