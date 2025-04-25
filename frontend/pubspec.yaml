@@ -7,13 +7,31 @@ environment:
   sdk: ^3.7.0
 
 dependencies:
+  dartz: ^0.10.1
   flutter:
     sdk: flutter
+  flutter_bloc: ^8.1.6
+  google_fonts: ^6.2.1
+  http: ^1.3.0
+  lucide_icons: 0.257.0
+  
+  
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
 
+
 flutter:
   uses-material-design: true
+  assets:
+    - assets/google.png
+    - assets/atomus_logo.png
+    - assets/atomus_welcome.png
+    - assets/data/interest_run_data.json
+    - assets/icon/runner_icon.png
+    - assets/icon/read_book_icon.png
+    - assets/icon/weight_gym_icon.png
+    - assets/icon/meditation_icon.png
+    
