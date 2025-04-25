@@ -1,0 +1,496 @@
+{
+    "title": "Plano de Treino para Corrida",
+    "description": "Seguindo esse roteiro você pode conquistar habilidades na corrida, desbloqueando distâncias",
+    "phase_1": {
+        "title": "Fase 1: 2Km",
+        "week_1": {
+            "title": "Semana 1",
+            "activities": [
+                {
+                    "day": 1,
+                    "title": "Treino 1",
+                    "description": "Caminhada de 30 minutos em ritmo leve."
+                },
+                {
+                    "day": 2,
+                    "title": "Treino 2",
+                    "description": "Corrida leve de 2km"
+                },
+                {
+                    "day": 3,
+                    "title": "Treino 3",
+                    "description": "Treino de força (pernas e core)"
+                },
+                {
+                    "day": 4,
+                    "title": "Treino 4",
+                    "description": "Corrida leve de 3km"
+                },
+                {
+                    "day": 5,
+                    "title": "Treino 5",
+                    "description": "Alongamento de 20min"
+                },
+                {
+                    "day": 6,
+                    "title": "Treino 6",
+                    "description": "Caminhada em terreno inclinado de 40min"
+                },
+                {
+                    "day": 7,
+                    "title": "Treino 7",
+                    "description": "Descanso"
+                }
+            ]
+        },
+        "week_2": {
+            "title": "Semana 2",
+            "activities": [
+                {
+                    "day": 1,
+                    "title": "Treino 1",
+                    "description": "Caminhada de 30 minutos em ritmo leve."
+                },
+                {
+                    "day": 2,
+                    "title": "Treino 2",
+                    "description": "Corrida leve de 2km"
+                },
+                {
+                    "day": 3,
+                    "title": "Treino 3",
+                    "description": "Treino de força (pernas e core)"
+                },
+                {
+                    "day": 4,
+                    "title": "Treino 4",
+                    "description": "Corrida leve de 3km"
+                },
+                {
+                    "day": 5,
+                    "title": "Treino 5",
+                    "description": "Alongamento de 20min"
+                },
+                {
+                    "day": 6,
+                    "title": "Treino 6",
+                    "description": "Caminhada em terreno inclinado de 40min"
+                },
+                {
+                    "day": 7,
+                    "title": "Treino 7",
+                    "description": "Descanso"
+                }
+            ]
+        },
+        "week_3": {
+            "title": "Semana 3",
+            "activities": [
+                {
+                    "day": 1,
+                    "title": "Treino 1",
+                    "description": "Caminhada de 30 minutos em ritmo leve."
+                },
+                {
+                    "day": 2,
+                    "title": "Treino 2",
+                    "description": "Corrida leve de 2km"
+                },
+                {
+                    "day": 3,
+                    "title": "Treino 3",
+                    "description": "Treino de força (pernas e core)"
+                },
+                {
+                    "day": 4,
+                    "title": "Treino 4",
+                    "description": "Corrida leve de 3km"
+                },
+                {
+                    "day": 5,
+                    "title": "Treino 5",
+                    "description": "Alongamento de 20min"
+                },
+                {
+                    "day": 6,
+                    "title": "Treino 6",
+                    "description": "Caminhada em terreno inclinado de 40min"
+                },
+                {
+                    "day": 7,
+                    "title": "Treino 7",
+                    "description": "Descanso"
+                }
+            ]
+        }
+    },
+    "phase_2": {
+        "title": "Fase 2: 5Km",
+        "week_1": {
+            "title": "Semana 1",
+            "activities": [
+                {
+                    "day": 1,
+                    "title": "Treino 1",
+                    "description": "Caminhada de 30 minutos em ritmo leve."
+                },
+                {
+                    "day": 2,
+                    "title": "Treino 2",
+                    "description": "Corrida leve de 2km"
+                },
+                {
+                    "day": 3,
+                    "title": "Treino 3",
+                    "description": "Treino de força (pernas e core)"
+                },
+                {
+                    "day": 4,
+                    "title": "Treino 4",
+                    "description": "Corrida leve de 3km"
+                },
+                {
+                    "day": 5,
+                    "title": "Treino 5",
+                    "description": "Alongamento de 20min"
+                },
+                {
+                    "day": 6,
+                    "title": "Treino 6",
+                    "description": "Caminhada em terreno inclinado de 40min"
+                },
+                {
+                    "day": 7,
+                    "title": "Treino 7",
+                    "description": "Descanso"
+                }
+            ]
+        },
+        "week_2": {
+            "title": "Semana 2",
+            "activities": [
+                {
+                    "day": 1,
+                    "title": "Treino 1",
+                    "description": "Caminhada de 30 minutos em ritmo leve."
+                },
+                {
+                    "day": 2,
+                    "title": "Treino 2",
+                    "description": "Corrida leve de 2km"
+                },
+                {
+                    "day": 3,
+                    "title": "Treino 3",
+                    "description": "Treino de força (pernas e core)"
+                },
+                {
+                    "day": 4,
+                    "title": "Treino 4",
+                    "description": "Corrida leve de 3km"
+                },
+                {
+                    "day": 5,
+                    "title": "Treino 5",
+                    "description": "Alongamento de 20min"
+                },
+                {
+                    "day": 6,
+                    "title": "Treino 6",
+                    "description": "Caminhada em terreno inclinado de 40min"
+                },
+                {
+                    "day": 7,
+                    "title": "Treino 7",
+                    "description": "Descanso"
+                }
+            ]
+        },
+        "week_3": {
+            "title": "Semana 3",
+            "activities": [
+                {
+                    "day": 1,
+                    "title": "Treino 1",
+                    "description": "Caminhada de 30 minutos em ritmo leve."
+                },
+                {
+                    "day": 2,
+                    "title": "Treino 2",
+                    "description": "Corrida leve de 2km"
+                },
+                {
+                    "day": 3,
+                    "title": "Treino 3",
+                    "description": "Treino de força (pernas e core)"
+                },
+                {
+                    "day": 4,
+                    "title": "Treino 4",
+                    "description": "Corrida leve de 3km"
+                },
+                {
+                    "day": 5,
+                    "title": "Treino 5",
+                    "description": "Alongamento de 20min"
+                },
+                {
+                    "day": 6,
+                    "title": "Treino 6",
+                    "description": "Caminhada em terreno inclinado de 40min"
+                },
+                {
+                    "day": 7,
+                    "title": "Treino 7",
+                    "description": "Descanso"
+                }
+            ]
+        }
+    },
+    "phase_3": {
+        "title": "Fase 3: 10Km",
+        "week_1": {
+            "title": "Semana 1",
+            "activities": [
+                {
+                    "day": 1,
+                    "title": "Treino 1",
+                    "description": "Caminhada de 30 minutos em ritmo leve."
+                },
+                {
+                    "day": 2,
+                    "title": "Treino 2",
+                    "description": "Corrida leve de 2km"
+                },
+                {
+                    "day": 3,
+                    "title": "Treino 3",
+                    "description": "Treino de força (pernas e core)"
+                },
+                {
+                    "day": 4,
+                    "title": "Treino 4",
+                    "description": "Corrida leve de 3km"
+                },
+                {
+                    "day": 5,
+                    "title": "Treino 5",
+                    "description": "Alongamento de 20min"
+                },
+                {
+                    "day": 6,
+                    "title": "Treino 6",
+                    "description": "Caminhada em terreno inclinado de 40min"
+                },
+                {
+                    "day": 7,
+                    "title": "Treino 7",
+                    "description": "Descanso"
+                }
+            ]
+        },
+        "week_2": {
+            "title": "Semana 2",
+            "activities": [
+                {
+                    "day": 1,
+                    "title": "Treino 1",
+                    "description": "Caminhada de 30 minutos em ritmo leve."
+                },
+                {
+                    "day": 2,
+                    "title": "Treino 2",
+                    "description": "Corrida leve de 2km"
+                },
+                {
+                    "day": 3,
+                    "title": "Treino 3",
+                    "description": "Treino de força (pernas e core)"
+                },
+                {
+                    "day": 4,
+                    "title": "Treino 4",
+                    "description": "Corrida leve de 3km"
+                },
+                {
+                    "day": 5,
+                    "title": "Treino 5",
+                    "description": "Alongamento de 20min"
+                },
+                {
+                    "day": 6,
+                    "title": "Treino 6",
+                    "description": "Caminhada em terreno inclinado de 40min"
+                },
+                {
+                    "day": 7,
+                    "title": "Treino 7",
+                    "description": "Descanso"
+                }
+            ]
+        },
+        "week_3": {
+            "title": "Semana 3",
+            "activities": [
+                {
+                    "day": 1,
+                    "title": "Treino 1",
+                    "description": "Caminhada de 30 minutos em ritmo leve."
+                },
+                {
+                    "day": 2,
+                    "title": "Treino 2",
+                    "description": "Corrida leve de 2km"
+                },
+                {
+                    "day": 3,
+                    "title": "Treino 3",
+                    "description": "Treino de força (pernas e core)"
+                },
+                {
+                    "day": 4,
+                    "title": "Treino 4",
+                    "description": "Corrida leve de 3km"
+                },
+                {
+                    "day": 5,
+                    "title": "Treino 5",
+                    "description": "Alongamento de 20min"
+                },
+                {
+                    "day": 6,
+                    "title": "Treino 6",
+                    "description": "Caminhada em terreno inclinado de 40min"
+                },
+                {
+                    "day": 7,
+                    "title": "Treino 7",
+                    "description": "Descanso"
+                }
+            ]
+        }
+    },
+    "phase_4": {
+        "title": "Fase 4: 20Km",
+        "week_1": {
+            "title": "Semana 1",
+            "activities": [
+                {
+                    "day": 1,
+                    "title": "Treino 1",
+                    "description": "Caminhada de 30 minutos em ritmo leve."
+                },
+                {
+                    "day": 2,
+                    "title": "Treino 2",
+                    "description": "Corrida leve de 2km"
+                },
+                {
+                    "day": 3,
+                    "title": "Treino 3",
+                    "description": "Treino de força (pernas e core)"
+                },
+                {
+                    "day": 4,
+                    "title": "Treino 4",
+                    "description": "Corrida leve de 3km"
+                },
+                {
+                    "day": 5,
+                    "title": "Treino 5",
+                    "description": "Alongamento de 20min"
+                },
+                {
+                    "day": 6,
+                    "title": "Treino 6",
+                    "description": "Caminhada em terreno inclinado de 40min"
+                },
+                {
+                    "day": 7,
+                    "title": "Treino 7",
+                    "description": "Descanso"
+                }
+            ]
+        },
+        "week_2": {
+            "title": "Semana 2",
+            "activities": [
+                {
+                    "day": 1,
+                    "title": "Treino 1",
+                    "description": "Caminhada de 30 minutos em ritmo leve."
+                },
+                {
+                    "day": 2,
+                    "title": "Treino 2",
+                    "description": "Corrida leve de 2km"
+                },
+                {
+                    "day": 3,
+                    "title": "Treino 3",
+                    "description": "Treino de força (pernas e core)"
+                },
+                {
+                    "day": 4,
+                    "title": "Treino 4",
+                    "description": "Corrida leve de 3km"
+                },
+                {
+                    "day": 5,
+                    "title": "Treino 5",
+                    "description": "Alongamento de 20min"
+                },
+                {
+                    "day": 6,
+                    "title": "Treino 6",
+                    "description": "Caminhada em terreno inclinado de 40min"
+                },
+                {
+                    "day": 7,
+                    "title": "Treino 7",
+                    "description": "Descanso"
+                }
+            ]
+        },
+        "week_3": {
+            "title": "Semana 3",
+            "activities": [
+                {
+                    "day": 1,
+                    "title": "Treino 1",
+                    "description": "Caminhada de 30 minutos em ritmo leve."
+                },
+                {
+                    "day": 2,
+                    "title": "Treino 2",
+                    "description": "Corrida leve de 2km"
+                },
+                {
+                    "day": 3,
+                    "title": "Treino 3",
+                    "description": "Treino de força (pernas e core)"
+                },
+                {
+                    "day": 4,
+                    "title": "Treino 4",
+                    "description": "Corrida leve de 3km"
+                },
+                {
+                    "day": 5,
+                    "title": "Treino 5",
+                    "description": "Alongamento de 20min"
+                },
+                {
+                    "day": 6,
+                    "title": "Treino 6",
+                    "description": "Caminhada em terreno inclinado de 40min"
+                },
+                {
+                    "day": 7,
+                    "title": "Treino 7",
+                    "description": "Descanso"
+                }
+            ]
+        }
+    }
+}
